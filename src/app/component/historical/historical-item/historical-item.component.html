@@ -1,0 +1,43 @@
+<section class="historical-item">
+  <div class="historical-item__content">
+    <div
+      class="historical-item__content__date blurEffect"
+      [class.active]="condition"
+    >
+      <div
+        *ngIf="element.date.date"
+        class="historical-item__content__date__more"
+      >
+        {{ element.date.date }}
+      </div>
+      <div class="historical-item__content__date__year">
+        {{ element.date.year }}
+      </div>
+    </div>
+    <div
+      class="historical-item__content__informations dotEffect"
+      [class.active]="condition"
+    >
+      <div
+        class="historical-item__content__informations__title blurEffect"
+        [class.active]="condition"
+      >
+        {{ element.title }}
+      </div>
+      <div
+        *ngIf="element.subtitle"
+        class="historical-item__content__informations__subtitle blurEffect"
+        [class.active]="condition"
+      >
+        {{ element.subtitle }}
+      </div>
+      <div
+        *ngIf="element.description"
+        class="historical-item__content__informations__description blurEffect"
+        [class.active]="condition"
+      >
+        {{ element.description }}
+      </div>
+    </div>
+  </div>
+</section>

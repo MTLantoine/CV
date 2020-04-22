@@ -1,0 +1,17 @@
+<section #target class="graph">
+  <div class="graph__content">
+    <div class="graph__content__title">
+      <app-title [title]="elements.title" [side]="side"></app-title>
+    </div>
+    <div
+      class="graph__content__graph-item"
+      *ngFor="let element of elements.competence; let i = index"
+    >
+      <app-graph-item
+        [isVisible]="isVisible"
+        [element]="element"
+        [index]="i"
+      ></app-graph-item>
+    </div>
+  </div>
+</section>

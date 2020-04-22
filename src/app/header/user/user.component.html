@@ -1,0 +1,25 @@
+<section #target class="user">
+  <div class="user__content">
+    <div
+      class="user__content__profile-picture slideLeftEffect"
+      [class.active]="condition1"
+    >
+      <img src="{{ user.picture.src }}" alt="{{ user.picture.alt }}" />
+      <div
+        class="user__content__profile-picture__easter-egg blurEffect faster"
+        [class.active]="condition3"
+      >
+        <img src="../../../assets/pic/sunglasses.png" alt="easter-egg" />
+      </div>
+    </div>
+    <div
+      class="user__content__info slideLeftEffect"
+      [class.active]="condition2"
+    >
+      <div class="user__content__info__name">
+        {{ user.firstName }} {{ user.lastName }}
+      </div>
+      <div class="user__content__info__age">{{ user.age }} ans</div>
+    </div>
+  </div>
+</section>

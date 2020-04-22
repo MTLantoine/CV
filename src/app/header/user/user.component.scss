@@ -1,0 +1,56 @@
+@import "src/stylesheets/styles";
+
+.user {
+  &__content {
+    display: flex;
+    max-width: 750px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (min-width: $lsmall) {
+      flex-direction: row;
+      text-align: initial;
+    }
+    &__profile-picture {
+      width: 125px;
+      height: 125px;
+      @media screen and (min-width: $lsmall) {
+        width: 150px;
+        height: 150px;
+      }
+      @media screen and (min-width: $xmedium) {
+        width: 200px;
+        height: 200px;
+      }
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid $lightgray;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      &__easter-egg {
+        position: absolute;
+        bottom: 37%;
+        right: 31%;
+        width: 42%;
+      }
+    }
+    &__info {
+      font-size: 18px;
+      margin-top: 10px;
+      @media screen and (min-width: $small) {
+        font-size: 20px;
+      }
+      @media screen and (min-width: $lsmall) {
+        margin: 0;
+        font-size: 28px;
+      }
+      &__name {
+        font-weight: $cvbold;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<section #target class="historical">
+  <div class="historical__content">
+    <div
+      class="historical__content__historical-item"
+      *ngFor="let element of newElements; let i = index"
+    >
+      <app-historical-item
+        [isVisible]="isVisible"
+        [element]="element"
+        [index]="i"
+      ></app-historical-item>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+@import "src/stylesheets/styles";
+
+.passion {
+  &__content {
+    &__items {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      flex-direction: column;
+      @media screen and (min-width: $small) {
+        flex-direction: row;
+      }
+      &__one-element {
+        width: 100%;
+        padding: 20px 0;
+        @media screen and (min-width: $small) {
+          min-width: 200px;
+          width: initial;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

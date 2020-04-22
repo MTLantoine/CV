@@ -1,0 +1,15 @@
+<section #target class="passion section">
+  <div class="passion__content">
+    <div class="passion__content__title">
+      <app-title [title]="passions.title"></app-title>
+    </div>
+    <div class="passion__content__items">
+      <div
+        *ngFor="let box of passions.passion; let i = index"
+        class="passion__content__items__one-element"
+      >
+        <app-box [isVisible]="isVisible" [box]="box" [index]="i"></app-box>
+      </div>
+    </div>
+  </div>
+</section>

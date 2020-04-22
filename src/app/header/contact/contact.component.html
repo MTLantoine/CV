@@ -1,0 +1,49 @@
+<section #target class="contact">
+  <div class="contact__content">
+    <div class="contact__content__info">
+      <div
+        class="contact__content__info__text contact__content__info__text__bold slideLeftEffect"
+        [class.active]="conditionConst"
+      >
+        Adresse :
+      </div>
+      <div
+        class="contact__content__info__text slideLeftEffect"
+        [class.active]="conditionVariable"
+      >
+        {{ contact.address }},<br />
+        {{ contact.cp }} {{ contact.city }}
+      </div>
+    </div>
+
+    <div class="contact__content__info">
+      <div
+        class="contact__content__info__text contact__content__info__text__bold slideLeftEffect"
+        [class.active]="conditionConst"
+      >
+        Tel :
+      </div>
+      <div
+        class="contact__content__info__text slideLeftEffect"
+        [class.active]="conditionVariable"
+      >
+        {{ contact.tel }}
+      </div>
+    </div>
+
+    <div class="contact__content__info">
+      <div
+        class="contact__content__info__text contact__content__info__text__bold slideLeftEffect"
+        [class.active]="conditionConst"
+      >
+        E-mail :
+      </div>
+      <div
+        class="contact__content__info__text slideLeftEffect"
+        [class.active]="conditionVariable"
+      >
+        {{ contact.mail }}
+      </div>
+    </div>
+  </div>
+</section>

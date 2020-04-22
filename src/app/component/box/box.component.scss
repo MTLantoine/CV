@@ -1,0 +1,21 @@
+@import "src/stylesheets/styles";
+
+.box {
+  &__content {
+    color: $white;
+    &__element {
+      padding: 10px;
+      text-align: center;
+    }
+    &__title {
+      background-color: $darkmode;
+      z-index: 1;
+    }
+    &__item {
+      &__one-element {
+        z-index: -1;
+        background: $gradient180;
+      }
+    }
+  }
+}

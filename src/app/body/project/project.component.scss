@@ -1,0 +1,30 @@
+@import "src/stylesheets/styles";
+
+.project {
+  &__content {
+    &__swiper {
+      &__arrow {
+        &__next {
+          color: $darkmode;
+          right: -10px;
+          @media screen and (min-width: $large) {
+            right: -20px;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+        &__prev {
+          color: $darkmode;
+          left: -10px;
+          @media screen and (min-width: $large) {
+            left: -12px;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

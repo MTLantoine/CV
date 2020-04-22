@@ -1,0 +1,17 @@
+<section class="graph-item">
+  <div class="graph-item__content">
+    <div class="graph-item__content__name">
+      {{ element.name }}
+    </div>
+    <div class="graph-item__content__max">
+      <div #target class="graph-item__content__max__bar">
+        <div
+          class="graph-item__content__max__bar__percent blurEffect"
+          [class.active]="condition"
+        >
+          {{ i }}%
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

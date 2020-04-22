@@ -1,0 +1,53 @@
+@import "src/stylesheets/styles";
+
+.historical-item {
+  &__content {
+    display: flex;
+    &__date {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      font-weight: $lbold;
+      padding: 10px 20px;
+      font-size: 20px;
+      @media screen and (min-width: $small) {
+        font-size: 22px;
+      }
+      @media screen and (min-width: $lsmall) {
+        font-size: 28px;
+      }
+      @media screen and (min-width: $xmedium) {
+        width: 35%;
+      }
+      @media screen and (min-width: $medium) {
+        font-size: 32px;
+      }
+    }
+    &__informations {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 10px 20px;
+      @media screen and (min-width: $lsmall) {
+        padding: 10px 30px;
+      }
+      @media screen and (min-width: $xmedium) {
+        width: 65%;
+      }
+      &__title {
+        font-weight: $cvbold;
+        @media screen and (min-width: $medium) {
+          font-size: 30px;
+        }
+      }
+      &__subtitle {
+        font-style: italic;
+      }
+      &__description {
+        color: $gray;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "src/stylesheets/styles";
+
+.contact {
+  &__content {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      @media screen and (min-width: $lsmall) {
+        flex-direction: row;
+        margin: 0 auto;
+      }
+      @media screen and (max-width: $medium) {
+        max-width: 500px;
+      }
+      &__text {
+        width: 100%;
+        @media screen and (min-width: $small) {
+          width: 50%;
+        }
+        &__bold {
+          font-weight: $cvbold;
+        }
+      }
+    }
+  }
+}

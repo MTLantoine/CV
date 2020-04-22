@@ -1,0 +1,177 @@
+// Weight
+$cvbold: 600;
+$lbold: 800;
+
+// Colors
+$lightgray: lightgray;
+$gray: gray;
+$white: white;
+$black: black;
+$darkmode: #061435;
+$gradient: linear-gradient(
+  90deg,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 50%,
+  rgba(252, 176, 69, 1) 100%
+);
+$gradient180: linear-gradient(
+  180deg,
+  rgba(194, 19, 19, 0.5) 0%,
+  rgba(194, 19, 19, 0.75) 50%,
+  rgba(194, 19, 19, 1) 100%
+);
+$radial-gradient: radial-gradient(
+  circle,
+  rgba(131, 58, 180, 1) 0%,
+  rgba(253, 29, 29, 1) 50%,
+  rgba(252, 176, 69, 1) 100%
+);
+
+// Layout
+$small: 400px;
+$lsmall: 600px;
+$xmedium: 800px;
+$medium: 1000px;
+$lmedium: 1200px;
+$xlarge: 1400px;
+$large: 1600px;
+$llarge: 1800px;
+
+// Premade Styles
+.section {
+  margin: 0 -20px;
+  padding: 20px;
+}
+
+.darkmode {
+  background-color: $darkmode;
+  color: $white;
+}
+
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: $lbold;
+  padding: 20px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  background-color: $white;
+  &::before {
+    z-index: -1;
+    transition: 250ms;
+    content: "";
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: rgba($darkmode, 0.3);
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  height: 300px;
+}
+
+.blurEffect {
+  opacity: 0;
+  transition-duration: 500ms;
+  &.faster {
+    transition-duration: 250ms;
+  }
+  &.active {
+    opacity: 1;
+  }
+}
+
+.slideLeftEffect {
+  opacity: 0;
+  transform: translateX(20px);
+  transition-duration: 500ms;
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slideRightEffect {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition-duration: 500ms;
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.slideDownEffect {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition-duration: 500ms;
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+  &__more {
+    transform: translateY(-50px);
+  }
+}
+
+.dotEffect {
+  position: relative;
+  &::before {
+    background-color: $lightgray;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 8px;
+    top: 0;
+    left: -5px;
+  }
+  &::after {
+    z-index: 1;
+    border-radius: 50%;
+    background-color: $lightgray;
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -13.5px;
+  }
+  &.active {
+    &::before {
+      height: 100%;
+    }
+    &::after {
+      animation-duration: 500ms;
+      animation-name: dotAnimation;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+//Animations
+@keyframes dotAnimation {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,12 @@
+<section class="project-item">
+  <a routerLink="/project/{{ item.path }}">
+    <div class="project-item__content">
+      <div class="project-item__content__title">
+        {{ item.title }}
+      </div>
+      <div class="project-item__content__background">
+        <img src="{{ item.picture.src }}" alt="{{ item.picture.alt }}" />
+      </div>
+    </div>
+  </a>
+</section>

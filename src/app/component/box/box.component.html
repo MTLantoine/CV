@@ -1,0 +1,17 @@
+<section class="box">
+  <div class="box__content">
+    <div class="box__content__title box__content__element">{{ box.title }}</div>
+    <div class="box__content__item">
+      <div
+        *ngFor="let item of box.example; let i = index"
+        class="box__content__item__one-element box__content__element"
+      >
+        <app-box-item
+          [isVisible]="condition"
+          [item]="item"
+          [index]="i"
+        ></app-box-item>
+      </div>
+    </div>
+  </div>
+</section>

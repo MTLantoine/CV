@@ -1,0 +1,14 @@
+<section #target class="license">
+  <ul class="license__list">
+    <li
+      class="license__list__item"
+      *ngFor="let lic of contact.license; let i = index"
+    >
+      <app-license-item
+        [isVisible]="isVisible"
+        [license]="lic"
+        [index]="i"
+      ></app-license-item>
+    </li>
+  </ul>
+</section>
