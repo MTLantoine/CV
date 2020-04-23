@@ -2,11 +2,14 @@
 
 .box-item {
   &__content {
+    border-bottom: 2px solid $black;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     &__picto {
-      width: 40px;
+      width: 100%;
+      max-width: 40px;
       padding-left: 15px;
     }
   }

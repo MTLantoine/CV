@@ -2,18 +2,11 @@
 
 .box {
   &__content {
-    &__element {
+    &__title {
       padding: 10px;
       text-align: center;
-    }
-    &__title {
       color: $white;
       background-color: $darkmode;
-    }
-    &__item {
-      &__one-element {
-        border-bottom: 2px solid $black;
-      }
     }
   }
 }
