@@ -1,1 +1,13 @@
 @import "src/stylesheets/styles";
+
+.box-item {
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__picto {
+      width: 40px;
+      padding-left: 15px;
+    }
+  }
+}

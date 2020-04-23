@@ -1,3 +1,8 @@
 <section class="box-item">
-  <div class="box-item__content">{{ item }}</div>
+  <div class="box-item__content">
+    <div class="box-item__content__title">{{ item.title }}</div>
+    <div class="box-item__content__picto">
+      <img src="{{ item.picto.src }}" alt="{{ item.picto.alt }}" />
+    </div>
+  </div>
 </section>
