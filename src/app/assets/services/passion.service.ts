@@ -1,43 +1,43 @@
 import * as models from "../models";
 
 export class PassionService {
-  passion = new models.Passion("Passions", [
+  passion = new models.Passion("CATHY HOUDART", [
     // Sport
-    new models.OnePassion("Sport", [
+    new models.OnePassion("CATHY HOUDART", [
       new models.OneExample(
-        "Natation en club",
+        "CATHY HOUDART",
         new models.Picture("./assets/pic/svg/swim.svg", "Natation en club")
       ),
       new models.OneExample(
-        "Musculation",
+        "CATHY HOUDART",
         new models.Picture("./assets/pic/svg/gym.svg", "Musculation")
       ),
       new models.OneExample(
-        "Cyclisme",
+        "CATHY HOUDART",
         new models.Picture("./assets/pic/svg/bycicle.svg", "Cyclisme")
       ),
     ]),
 
     // Musique
-    new models.OnePassion("Musique", [
+    new models.OnePassion("CATHY HOUDART", [
       new models.OneExample(
-        "Piano",
+        "CATHY HOUDART",
         new models.Picture("./assets/pic/svg/piano.svg", "Piano")
       ),
       new models.OneExample(
-        "Guitare",
+        "CATHY HOUDART",
         new models.Picture("./assets/pic/svg/music.svg", "Guitare")
       ),
     ]),
 
     // Informatique
-    new models.OnePassion("Informatique", [
+    new models.OnePassion("CATHY HOUDART", [
       new models.OneExample(
-        "Jeux vidéo",
+        "CATHY HOUDART",
         new models.Picture("./assets/pic/svg/game-controller.svg", "Jeux vidéo")
       ),
       new models.OneExample(
-        "Programmation",
+        "CATHY HOUDART",
         new models.Picture(
           "./assets/pic/svg/web-development.svg",
           "Programmation"
