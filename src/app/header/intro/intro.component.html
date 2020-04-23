@@ -1,18 +1,7 @@
-<section #target class="intro darkmode section">
+<section class="intro darkmode section">
   <div class="intro__content">
-    <!-- <div class="intro__content__title">
-      <app-title [title]="intro.title"></app-title>
-    </div> -->
-    <div
-      class="intro__content__text"
-      *ngFor="let text of intro.text; let i = index"
-    >
-      <app-intro-item
-        [isVisible]="isVisible"
-        [text]="text"
-        [index]="i"
-      ></app-intro-item>
-      <div *ngIf="i < nbrItems - 1" class="intro__content__space"></div>
+    <div class="intro__content__text">
+      <app-text [text]="intro.text" [nbrItems]="intro.text.length"></app-text>
     </div>
   </div>
 </section>

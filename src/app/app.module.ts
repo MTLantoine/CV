@@ -22,7 +22,6 @@ import { UserComponent } from "./header/user/user.component";
 import { CopyrightComponent } from "./header/copyright/copyright.component";
 import { ContactComponent } from "./header/contact/contact.component";
 import { IntroComponent } from "./header/intro/intro.component";
-import { IntroItemComponent } from "./header/intro/intro-item/intro-item.component";
 import { BodyComponent } from "./body/body.component";
 import { FooterComponent } from "./footer/footer.component";
 import { GraphComponent } from "./component/graph/graph.component";
@@ -40,7 +39,9 @@ import { BoxItemComponent } from "./component/box/box-item/box-item.component";
 import { CvComponent } from "./app-core/cv/cv.component";
 import { AppCoreComponent } from "./app-core/app-core.component";
 import { NotFoundComponent } from "./component/not-found/not-found.component";
-import { GithubComponent } from './footer/github/github.component';
+import { GithubComponent } from "./footer/github/github.component";
+import { TextComponent } from "./component/text/text.component";
+import { TextItemComponent } from "./component/text/text-item/text-item.component";
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
@@ -60,7 +61,6 @@ const appRoutes: Routes = [
     CopyrightComponent,
     ContactComponent,
     IntroComponent,
-    IntroItemComponent,
     BodyComponent,
     FooterComponent,
     GraphComponent,
@@ -79,6 +79,8 @@ const appRoutes: Routes = [
     AppCoreComponent,
     NotFoundComponent,
     GithubComponent,
+    TextComponent,
+    TextItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [

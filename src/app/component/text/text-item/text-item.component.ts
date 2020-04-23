@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from "@angular/core";
 import * as utils from "../../../assets/utils";
 
 @Component({
-  selector: "app-intro-item",
-  templateUrl: "./intro-item.component.html",
-  styleUrls: ["./intro-item.component.scss"],
+  selector: "app-text-item",
+  templateUrl: "./text-item.component.html",
+  styleUrls: ["./text-item.component.scss"],
 })
-export class IntroItemComponent implements OnInit {
+export class TextItemComponent implements OnInit {
   @Input() text;
   @Input() index;
   private _isVisible: boolean;
