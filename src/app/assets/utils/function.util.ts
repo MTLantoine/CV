@@ -1,5 +1,3 @@
-import Swiper from "swiper";
-
 export function activate() {
   return true;
 }
@@ -103,31 +101,4 @@ export function getProjectByPath(path: string, projects) {
     return element.path === path;
   });
   return project === undefined ? null : project;
-}
-
-export function initSwiper() {
-  new Swiper(".swiper-container", {
-    effect: "coverflow",
-    freeMode: true,
-    slidesPerView: "1",
-    coverflowEffect: {
-      rotate: 50,
-      stretch: 0,
-      depth: 100,
-      modifier: 1,
-      slideShadows: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      600: {
-        slidesPerView: "2",
-      },
-      800: {
-        slidesPerView: "3",
-      },
-    },
-  });
 }

@@ -37,17 +37,14 @@ import { ExperienceComponent } from "./body/experience/experience.component";
 import { PassionComponent } from "./body/passion/passion.component";
 import { BoxComponent } from "./component/box/box.component";
 import { BoxItemComponent } from "./component/box/box-item/box-item.component";
-import { ProjectComponent } from "./body/project/project.component";
 import { CvComponent } from "./app-core/cv/cv.component";
-import { ProjectViewComponent } from "./app-core/project-view/project-view.component";
 import { AppCoreComponent } from "./app-core/app-core.component";
 import { NotFoundComponent } from "./component/not-found/not-found.component";
-import { ProjectItemComponent } from "./body/project/project-item/project-item.component";
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
   { path: "cv", redirectTo: "" },
-  { path: "project/:path", component: ProjectViewComponent },
+  // { path: "project/:path", component: ProjectViewComponent },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];
@@ -77,12 +74,9 @@ const appRoutes: Routes = [
     PassionComponent,
     BoxComponent,
     BoxItemComponent,
-    ProjectComponent,
     CvComponent,
-    ProjectViewComponent,
     AppCoreComponent,
     NotFoundComponent,
-    ProjectItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [
