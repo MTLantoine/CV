@@ -2,7 +2,13 @@
 
 .copyright {
   font-style: italic;
-  font-size: 12px;
+  font-size: 8px;
+  @media screen and (min-width: $lsmall) {
+    font-size: 10px;
+  }
+  @media screen and (min-width: $xmedium) {
+    font-size: 12px;
+  }
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
