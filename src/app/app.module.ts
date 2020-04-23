@@ -40,6 +40,7 @@ import { BoxItemComponent } from "./component/box/box-item/box-item.component";
 import { CvComponent } from "./app-core/cv/cv.component";
 import { AppCoreComponent } from "./app-core/app-core.component";
 import { NotFoundComponent } from "./component/not-found/not-found.component";
+import { GithubComponent } from './footer/github/github.component';
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
@@ -77,6 +78,7 @@ const appRoutes: Routes = [
     CvComponent,
     AppCoreComponent,
     NotFoundComponent,
+    GithubComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [
