@@ -1,7 +1,11 @@
 import { Picture } from "./Picture.model";
 
 export class Text {
-  constructor(public title: string, public text: OneText[]) {}
+  constructor(
+    public title: string,
+    public text: OneText[],
+    public link?: string
+  ) {}
 }
 
 export class OneText {

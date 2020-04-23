@@ -1,7 +1,12 @@
-<section class="github section darkmode">
-  <div class="github__content">
-    <div class="github__content__text">
-      <app-text [text]="github.text" [nbrItems]="github.text.length"></app-text>
+<a href="{{ github.link }}" target="{{ github.link }}">
+  <section class="github section darkmode clickable">
+    <div class="github__content">
+      <div class="github__content__text">
+        <app-text
+          [text]="github.text"
+          [nbrItems]="github.text.length"
+        ></app-text>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</a>

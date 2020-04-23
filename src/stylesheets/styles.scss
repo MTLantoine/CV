@@ -8,6 +8,7 @@ $gray: gray;
 $white: white;
 $black: black;
 $darkmode: #061435;
+$darkmode-hover: #040d22;
 $gradient: linear-gradient(
   90deg,
   rgba(131, 58, 180, 1) 0%,
@@ -26,6 +27,10 @@ $large: 1600px;
 $llarge: 1800px;
 
 // Premade Styles
+a {
+  text-decoration: none;
+}
+
 .section {
   margin: 0 -20px;
   padding: 20px;
@@ -34,6 +39,15 @@ $llarge: 1800px;
 .darkmode {
   background-color: $darkmode;
   color: $white;
+}
+
+.clickable {
+  cursor: pointer;
+  transition-duration: 200ms;
+  text-decoration: none;
+  &:hover {
+    background-color: $darkmode-hover;
+  }
 }
 
 .button {
