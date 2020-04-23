@@ -7,3 +7,4 @@ export * from "./passion.service";
 export * from "./formation.service";
 export * from "./experience.service";
 export * from "./project.service";
+export * from "./github.service";

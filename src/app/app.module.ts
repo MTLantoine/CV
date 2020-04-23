@@ -12,6 +12,7 @@ import {
   PassionService,
   ProjectService,
   UserService,
+  GithubService,
 } from "./assets/services";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -93,6 +94,7 @@ const appRoutes: Routes = [
     PassionService,
     ProjectService,
     UserService,
+    GithubService,
   ],
   bootstrap: [AppComponent],
 })

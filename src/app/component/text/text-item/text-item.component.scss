@@ -1,1 +1,16 @@
 @import "src/stylesheets/styles";
+
+.text-item {
+  &__content {
+    &__description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__img {
+        width: 100%;
+        max-width: 40px;
+        padding-left: 15px;
+      }
+    }
+  }
+}

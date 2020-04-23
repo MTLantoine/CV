@@ -1,5 +1,10 @@
 <section class="text-item">
   <div class="text-item__content blurEffect" [class.active]="condition">
-    {{ text }}
+    <div class="text-item__content__description">
+      {{ text.description }}
+      <div *ngIf="text.img" class="text-item__content__description__img">
+        <img src="{{ text.img.src }}" alt="{{ text.img.alt }}" />
+      </div>
+    </div>
   </div>
 </section>
