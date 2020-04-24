@@ -23,7 +23,10 @@ export function ifVisible(thisClass, element, pourcent: number, callbackIf) {
 }
 
 export function manageWidth(n: number) {
+  console.log("manageWidth launched");
   function manage(x) {
+    console.log("launch : manage(x)");
+    console.log("x = ", x.matches);
     if (x.matches) {
       return n;
     } else {
@@ -32,9 +35,10 @@ export function manageWidth(n: number) {
   }
 
   var x = window.matchMedia("(min-width: 600px)");
+  console.log("window.matchMedia = ", x);
   manage(x);
   x.addListener(manage);
-
+  console.log("manageWidth done");
   return manage(x);
 }
 
