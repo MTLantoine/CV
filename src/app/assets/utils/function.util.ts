@@ -8,7 +8,9 @@ export function waitXms(thisClass, x: number, callbackIf) {
 }
 
 export function ifVisible(thisClass, element, pourcent: number, callbackIf) {
+  console.log("launch : manageWidth ", pourcent);
   var newPourcent = this.manageWidth(pourcent);
+  console.log("success : manageWidth = ", newPourcent);
   new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting === true) {
