@@ -44,7 +44,7 @@ import { TextComponent } from "./component/text/text.component";
 import { TextItemComponent } from "./component/text/text-item/text-item.component";
 
 const appRoutes: Routes = [
-  { path: "", component: AppCoreComponent },
+  { path: "", component: NotFoundComponent },
   { path: "cv", redirectTo: "" },
   // { path: "project/:path", component: ProjectViewComponent },
   { path: "404", component: NotFoundComponent },
