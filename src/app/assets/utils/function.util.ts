@@ -8,8 +8,7 @@ export function waitXms(thisClass, x: number, callbackIf) {
 }
 
 export function ifVisible(thisClass, element, pourcent: number, callbackIf) {
-  var newPourcent = 20;
-  // console.log(this.manageWidth(pourcent));
+  var newPourcent = window.innerWidth > 600 ? pourcent : 20;
   new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting === true) {
@@ -19,22 +18,6 @@ export function ifVisible(thisClass, element, pourcent: number, callbackIf) {
     },
     { threshold: [newPourcent / 100] }
   ).observe(element);
-}
-
-export function manageWidth(n: number) {
-  function manage(x) {
-    if (x.matches) {
-      return n;
-    } else {
-      return 20;
-    }
-  }
-
-  var x = window.matchMedia("(min-width: 600px)");
-  manage(x);
-  x.addListener(manage);
-
-  return manage(x);
 }
 
 export function ifElseVisible(
