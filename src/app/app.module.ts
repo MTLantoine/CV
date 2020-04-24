@@ -47,8 +47,8 @@ const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
   { path: "cv", redirectTo: "" },
   // { path: "project/:path", component: ProjectViewComponent },
-  { path: "404.html", component: NotFoundComponent },
-  { path: "**", redirectTo: "/404.html" },
+  { path: "404", component: NotFoundComponent },
+  { path: "**", redirectTo: "/404" },
 ];
 
 @NgModule({
