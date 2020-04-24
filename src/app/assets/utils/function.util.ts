@@ -8,7 +8,8 @@ export function waitXms(thisClass, x: number, callbackIf) {
 }
 
 export function ifVisible(thisClass, element, pourcent: number, callbackIf) {
-  var newPourcent = this.manageWidth(pourcent);
+  // var newPourcent = this.manageWidth(pourcent);
+  var newPourcent = 80;
   new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting === true) {
@@ -20,21 +21,21 @@ export function ifVisible(thisClass, element, pourcent: number, callbackIf) {
   ).observe(element);
 }
 
-export function manageWidth(n: number) {
-  function manage(x) {
-    if (x.matches) {
-      return n;
-    } else {
-      return 20;
-    }
-  }
+// export function manageWidth(n: number) {
+//   function manage(x) {
+//     if (x.matches) {
+//       return n;
+//     } else {
+//       return 20;
+//     }
+//   }
 
-  var x = window.matchMedia("(min-width: 600px)");
-  manage(x);
-  x.addListener(manage);
+//   var x = window.matchMedia("(min-width: 600px)");
+//   manage(x);
+//   x.addListener(manage);
 
-  return manage(x);
-}
+//   return manage(x);
+// }
 
 export function ifElseVisible(
   thisClass,
