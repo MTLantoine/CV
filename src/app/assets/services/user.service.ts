@@ -5,6 +5,7 @@ export class UserService {
     "Antoine",
     "Mortelier",
     22,
-    new models.Picture("./assets/pic/profile.png", "profile picture")
+    new models.Picture("./assets/pic/profile.png", "profile picture"),
+    new models.Picture("./assets/pic/sunglasses.png", "easter egg")
   );
 }
