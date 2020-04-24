@@ -10,7 +10,6 @@ import {
   IntroService,
   LanguageService,
   PassionService,
-  ProjectService,
   UserService,
   GithubService,
 } from "./assets/services";
@@ -92,7 +91,6 @@ const appRoutes: Routes = [
     IntroService,
     LanguageService,
     PassionService,
-    ProjectService,
     UserService,
     GithubService,
   ],

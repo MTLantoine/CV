@@ -5,4 +5,3 @@ export * from "./Passion.model";
 export * from "./Picture.model";
 export * from "./User.model";
 export * from "./Text.model";
-export * from "./Project.model";
