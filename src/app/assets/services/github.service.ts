@@ -9,7 +9,7 @@ export class GithubService {
       ),
       new models.OneText(
         "github.com/MTLantoine",
-        new models.Picture("./assets/pic/svg/github.svg", " GitHub")
+        new models.Picture("./assets/pic/svg/github.svg", "GitHub")
       ),
     ],
     "https://github.com/MTLantoine"

@@ -20,5 +20,11 @@ export class ExperienceService {
       "Surveillance et sauvetage en zone de baignade et préventions sur la plage comme dans l'eau",
       "Nageur sauveteur qualifié"
     ),
+    new models.OneExperience(
+      new models.Date("2018 - 2020"),
+      "Deliveroo",
+      "Livraison de repas à domicile",
+      "Coursier à vélo"
+    ),
   ]);
 }
