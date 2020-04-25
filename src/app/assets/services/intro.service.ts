@@ -9,7 +9,7 @@ export class IntroService {
       "Je suis passionné d'informatique depuis mes années lycée, et compte bien faire de ma passion mon métier."
     ),
     new models.OneText(
-      "J'ai forgé mon expérience en réalisant des projets qui m'ont tous fait mieux connaître  la technologie utilisée, mais j'ai aussi développé une fascination pour le développement de sites web lors de mon premier stage en entreprise."
+      "J'ai forgé mon expérience en réalisant des projets qui m'ont tous fait mieux connaître la technologie utilisée, mais j'ai aussi développé une fascination pour le développement de sites web lors de mon premier stage en entreprise."
     ),
     new models.OneText(
       "Motivé, dynamique, passionné, je suis toujours d'attaque pour trouver de nouvelles solutions à un problème."

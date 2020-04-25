@@ -5,7 +5,7 @@ export class GithubService {
     "GitHub",
     [
       new models.OneText(
-        "Vous pouvez retrouvez la majorité de mes projets personnels et universitaires sur ce lien :"
+        "Vous pouvez retrouver la majorité de mes projets personnels et universitaires sur ce lien :"
       ),
       new models.OneText(
         "github.com/MTLantoine",
