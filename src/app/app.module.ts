@@ -42,11 +42,12 @@ import { NotFoundComponent } from "./component/not-found/not-found.component";
 import { GithubComponent } from "./footer/github/github.component";
 import { TextComponent } from "./component/text/text.component";
 import { TextItemComponent } from "./component/text/text-item/text-item.component";
-import { MentionsLegalesComponent } from './component/mentions-legales/mentions-legales.component';
+import { MentionsLegalesComponent } from "./component/mentions-legales/mentions-legales.component";
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
   { path: "cv", redirectTo: "" },
+  { path: "mentions-legales", component: MentionsLegalesComponent },
   // { path: "project/:path", component: ProjectViewComponent },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
