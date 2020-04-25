@@ -4,6 +4,7 @@
   &__first-section {
     display: flex;
     flex-direction: column-reverse;
+    margin: 10px 0;
     @media screen and (min-width: $medium) {
       flex-direction: column;
     }
@@ -32,14 +33,11 @@
     }
     &__license {
       width: 100%;
-      margin-top: 30px;
+      margin-top: 20px;
       @media screen and (min-width: $medium) {
         margin: 0;
         width: 35%;
       }
     }
-  }
-  &__third-band {
-    margin-bottom: 0;
   }
 }
