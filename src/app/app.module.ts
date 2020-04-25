@@ -42,6 +42,7 @@ import { NotFoundComponent } from "./component/not-found/not-found.component";
 import { GithubComponent } from "./footer/github/github.component";
 import { TextComponent } from "./component/text/text.component";
 import { TextItemComponent } from "./component/text/text-item/text-item.component";
+import { MentionsLegalesComponent } from './component/mentions-legales/mentions-legales.component';
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
@@ -81,6 +82,7 @@ const appRoutes: Routes = [
     GithubComponent,
     TextComponent,
     TextItemComponent,
+    MentionsLegalesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [
