@@ -6,7 +6,7 @@ export class IntroService {
       "Diplômé d'une licence Informatique, je suis activement à la recherche d'une alternance pour les deux années à suivre (2020 - 2022)."
     ),
     new models.OneText(
-      "Passionné d'informatique, j’aime particulièrement créer de nouveaux programmes, surmonter des difficultés, sont vite devenu des tâches que j'aime réaliser."
+      "Passionné d'informatique, j’aime particulièrement créer de nouveaux programmes et surmonter des difficultés."
     ),
     new models.OneText(
       "Fort d’une expérience dans une entreprise spécialisée dans le développement de site internet, j’ai pu réaliser des projets utilisant différentes technologies."
