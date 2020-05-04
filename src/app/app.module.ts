@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
 
 import {
   CompetenceService,
@@ -94,7 +95,12 @@ const appRoutes: Routes = [
     AdminComponent,
     SingleAdminComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    RouterModule.forRoot(appRoutes),
+  ],
   providers: [
     CompetenceService,
     ContactService,
