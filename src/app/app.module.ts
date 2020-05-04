@@ -46,6 +46,8 @@ import { TextItemComponent } from "./component/text/text-item/text-item.componen
 import { MentionsLegalesComponent } from "./component/mentions-legales/mentions-legales.component";
 import { AdminComponent } from "./component/admin/admin.component";
 import { SingleAdminComponent } from "./component/admin/single-admin/single-admin.component";
+import { SignInComponent } from './component/admin/sign-in/sign-in.component';
+import { NewAccountComponent } from './component/admin/new-account/new-account.component';
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
@@ -94,6 +96,8 @@ const appRoutes: Routes = [
     MentionsLegalesComponent,
     AdminComponent,
     SingleAdminComponent,
+    SignInComponent,
+    NewAccountComponent,
   ],
   imports: [
     BrowserModule,

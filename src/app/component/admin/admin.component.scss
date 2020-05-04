@@ -1,1 +1,36 @@
 @import "src/stylesheets/styles";
+
+.admin {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $xmedium) {
+      flex-direction: row;
+    }
+    &__segment {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    &__signin {
+      height: 50%;
+      border-bottom: 1px solid $lightgray;
+      @media screen and (min-width: $xmedium) {
+        height: initial;
+        width: 50%;
+        border-bottom: none;
+        border-right: 1px solid $lightgray;
+      }
+    }
+    &__newaccount {
+      height: 50%;
+      border-top: 1px solid $lightgray;
+      @media screen and (min-width: $xmedium) {
+        height: initial;
+        width: 50%;
+        border-top: none;
+        border-left: 1px solid $lightgray;
+      }
+    }
+  }
+}
