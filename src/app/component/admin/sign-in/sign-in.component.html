@@ -1,1 +1,21 @@
-<p>sign-in works!</p>
+<section class="sign-in">
+  <div class="sign-in__content">
+    <form
+      class="sign-in__content__form"
+      [formGroup]="signInForm"
+      (ngSubmit)="onSubmitForm()"
+    >
+      <div class="sign-in__content__form__content">
+        <div class="sign-in__content__form__content__section">
+          <label for="mail">E-mail</label>
+          <input type="email" formControlName="mail" />
+        </div>
+        <div class="sign-in__content__form__content__section">
+          <label for="pwd">Mot de passe</label>
+          <input type="password" formControlName="pwd" />
+        </div>
+      </div>
+      <button class="button" type="submit">Se connecter</button>
+    </form>
+  </div>
+</section>
