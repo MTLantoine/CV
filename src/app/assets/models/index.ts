@@ -6,3 +6,4 @@ export * from "./Picture.model";
 export * from "./User.model";
 export * from "./Text.model";
 export * from "./Admin.model";
+export * from "./Template.model";

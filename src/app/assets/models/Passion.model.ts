@@ -1,4 +1,4 @@
-import { Picture } from "./Picture.model";
+import { Picture } from ".";
 
 export class Passion {
   constructor(public title: string, public passion: OnePassion[]) {}
