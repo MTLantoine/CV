@@ -12,14 +12,20 @@ import { Injectable } from "@angular/core";
   selector: "app-admin",
   templateUrl: "./admin.component.html",
   styleUrls: ["./admin.component.scss"],
+  host: {
+    "(window:resize)": "onResize($event)",
+  },
 })
 @Injectable()
 export class AdminComponent implements OnInit, CanActivate {
+  windowHeight: number;
   isAuth: boolean = false;
 
   constructor(private router: Router) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.windowHeight = window.innerHeight - 40;
+  }
 
   canActivate(
     route: ActivatedRouteSnapshot,
@@ -30,5 +36,9 @@ export class AdminComponent implements OnInit, CanActivate {
     } else {
       this.router.navigate(["/admin"]);
     }
+  }
+
+  onResize(event) {
+    this.windowHeight = event.target.innerHeight - 40;
   }
 }
