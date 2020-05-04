@@ -43,12 +43,19 @@ import { GithubComponent } from "./footer/github/github.component";
 import { TextComponent } from "./component/text/text.component";
 import { TextItemComponent } from "./component/text/text-item/text-item.component";
 import { MentionsLegalesComponent } from "./component/mentions-legales/mentions-legales.component";
+import { AdminComponent } from "./component/admin/admin.component";
+import { SingleAdminComponent } from "./component/admin/single-admin/single-admin.component";
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
   { path: "cv", redirectTo: "" },
   { path: "mentions-legales", component: MentionsLegalesComponent },
-  // { path: "project/:path", component: ProjectViewComponent },
+  { path: "admin", component: AdminComponent },
+  {
+    path: "admin/:path",
+    canActivate: [AdminComponent],
+    component: SingleAdminComponent,
+  },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];
@@ -84,6 +91,8 @@ const appRoutes: Routes = [
     TextComponent,
     TextItemComponent,
     MentionsLegalesComponent,
+    AdminComponent,
+    SingleAdminComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [
@@ -96,6 +105,7 @@ const appRoutes: Routes = [
     PassionService,
     UserService,
     GithubService,
+    AdminComponent,
   ],
   bootstrap: [AppComponent],
 })
