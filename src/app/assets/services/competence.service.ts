@@ -1,7 +1,7 @@
 import * as models from "../models";
 
 export class CompetenceService {
-  competence = new models.Competence("Compétences", [
+  competence = new models.Competence("Technologies", [
     new models.OneCompetence("AngularJS", 75),
     new models.OneCompetence("TypeScript", 60),
     new models.OneCompetence("JavaScript", 60),
@@ -9,6 +9,6 @@ export class CompetenceService {
     new models.OneCompetence("HTML", 80),
     new models.OneCompetence("CSS", 85),
     new models.OneCompetence("SQL", 30),
-    new models.OneCompetence("PHP", 20),
+    new models.OneCompetence("PHP", 30),
   ]);
 }

@@ -43,6 +43,7 @@ import { GithubComponent } from "./footer/github/github.component";
 import { TextComponent } from "./component/text/text.component";
 import { TextItemComponent } from "./component/text/text-item/text-item.component";
 import { MentionsLegalesComponent } from "./component/mentions-legales/mentions-legales.component";
+import { KnowledgeComponent } from './body/knowledge/knowledge.component';
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
@@ -84,6 +85,7 @@ const appRoutes: Routes = [
     TextComponent,
     TextItemComponent,
     MentionsLegalesComponent,
+    KnowledgeComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [

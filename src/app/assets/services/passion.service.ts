@@ -2,6 +2,21 @@ import * as models from "../models";
 
 export class PassionService {
   passion = new models.Passion("Passions", [
+    // Informatique
+    new models.OnePassion("Informatique", [
+      new models.OneExample(
+        "Jeux vidéo",
+        new models.Picture("./assets/pic/svg/game-controller.svg", "Jeux vidéo")
+      ),
+      new models.OneExample(
+        "Programmation",
+        new models.Picture(
+          "./assets/pic/svg/web-development.svg",
+          "Programmation"
+        )
+      ),
+    ]),
+
     // Sport
     new models.OnePassion("Sport", [
       new models.OneExample(
@@ -27,21 +42,6 @@ export class PassionService {
       new models.OneExample(
         "Guitare",
         new models.Picture("./assets/pic/svg/music.svg", "Guitare")
-      ),
-    ]),
-
-    // Informatique
-    new models.OnePassion("Informatique", [
-      new models.OneExample(
-        "Jeux vidéo",
-        new models.Picture("./assets/pic/svg/game-controller.svg", "Jeux vidéo")
-      ),
-      new models.OneExample(
-        "Programmation",
-        new models.Picture(
-          "./assets/pic/svg/web-development.svg",
-          "Programmation"
-        )
       ),
     ]),
   ]);

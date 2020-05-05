@@ -1,11 +1,11 @@
 import * as models from "../models";
 
 export class FormationService {
-  formation = new models.Experience("Formations", [
+  formation = new models.Experience("Formations & Compétences", [
     new models.OneExperience(
-      new models.Date("2016 - 2017"),
-      "Université de Lille 1",
-      "Licence 1 de SESI (Sciences Exactes et Sciences pour l'Ingénieur)"
+      new models.Date("2016 - 2020"),
+      "Université de Lille",
+      "Licence Informatique"
     ),
     new models.OneExperience(
       new models.Date("2017"),
@@ -13,19 +13,14 @@ export class FormationService {
       "Sauveteur qualifié aux interventions sur une personne en difficulté dans l'eau"
     ),
     new models.OneExperience(
-      new models.Date("2017 - 2020"),
-      "Université de Lille",
-      "Licence 2 et 3 d'informatique"
-    ),
-    new models.OneExperience(
       new models.Date("2016"),
-      "Premiers Secours en Équipe 1 et 2 (PSE1 et PSE2)",
+      "Premiers Secours en Équipe 1 (PSE1)",
       "Secourisme qualifié à l'aide des personnes en danger et premiers secours"
     ),
     new models.OneExperience(
       new models.Date("2016"),
-      "Lycée Sainte Claire - Lille",
-      "Bac Scientifique"
+      "Premiers Secours en Équipe 2 (PSE2)",
+      "Secourisme qualifié à l'aide des personnes en danger et premiers secours"
     ),
   ]);
 }
