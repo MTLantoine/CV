@@ -1,6 +1,6 @@
 import * as models from "../models";
 
-export class ConnaissanceService {
+export class KnowledgeService {
   connaissance = new models.Passion("Connaissances", [
     // Framework
     new models.OnePassion("Framework", [

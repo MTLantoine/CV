@@ -1,1 +1,15 @@
-<p>knowledge works!</p>
+<section #target class="knowledge section">
+  <div class="knowledge__content">
+    <div class="knowledge__content__title">
+      <app-title [title]="knowledges.title"></app-title>
+    </div>
+    <div class="knowledge__content__items">
+      <div
+        *ngFor="let box of knowledges.passion; let i = index"
+        class="knowledge__content__items__one-element"
+      >
+        <app-box [isVisible]="isVisible" [box]="box" [index]="i"></app-box>
+      </div>
+    </div>
+  </div>
+</section>

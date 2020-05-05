@@ -12,6 +12,7 @@ import {
   PassionService,
   UserService,
   GithubService,
+  KnowledgeService,
 } from "./assets/services";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -43,7 +44,7 @@ import { GithubComponent } from "./footer/github/github.component";
 import { TextComponent } from "./component/text/text.component";
 import { TextItemComponent } from "./component/text/text-item/text-item.component";
 import { MentionsLegalesComponent } from "./component/mentions-legales/mentions-legales.component";
-import { KnowledgeComponent } from './body/knowledge/knowledge.component';
+import { KnowledgeComponent } from "./body/knowledge/knowledge.component";
 
 const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
@@ -98,6 +99,7 @@ const appRoutes: Routes = [
     PassionService,
     UserService,
     GithubService,
+    KnowledgeService,
   ],
   bootstrap: [AppComponent],
 })
