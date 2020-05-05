@@ -6,7 +6,7 @@ export class KnowledgeService {
     new models.OnePassion("Framework", [
       new models.OneExample(
         "AngularJS",
-        new models.Picture("./assets/pic/svg/game-controller.svg", "AngularJS")
+        new models.Picture("./assets/pic/svg/angularjs.svg", "AngularJS")
       ),
     ]),
 
@@ -14,11 +14,11 @@ export class KnowledgeService {
     new models.OnePassion("IDE", [
       new models.OneExample(
         "Visual Studo Code",
-        new models.Picture("./assets/pic/svg/swim.svg", "Visual Studo Code")
+        new models.Picture("./assets/pic/svg/vs.svg", "Visual Studo Code")
       ),
       new models.OneExample(
         "Eclipse",
-        new models.Picture("./assets/pic/svg/gym.svg", "Eclipse")
+        new models.Picture("./assets/pic/svg/eclipse.svg", "Eclipse")
       ),
     ]),
 
@@ -26,7 +26,7 @@ export class KnowledgeService {
     new models.OnePassion("Versioning", [
       new models.OneExample(
         "GitHub",
-        new models.Picture("./assets/pic/svg/piano.svg", "GitHub")
+        new models.Picture("./assets/pic/svg/github-black.svg", "GitHub")
       ),
     ]),
   ]);
