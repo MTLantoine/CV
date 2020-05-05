@@ -25,8 +25,8 @@ export class KnowledgeService {
     // Versioning
     new models.OnePassion("Versioning", [
       new models.OneExample(
-        "GitHub",
-        new models.Picture("./assets/pic/svg/github-black.svg", "GitHub")
+        "Git",
+        new models.Picture("./assets/pic/svg/git.svg", "GitHub")
       ),
     ]),
   ]);
