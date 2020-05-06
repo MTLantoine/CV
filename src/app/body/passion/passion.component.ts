@@ -19,7 +19,7 @@ export class PassionComponent implements OnInit {
 
   ngOnInit() {
     this.initPassion();
-    utils.ifVisible(this, this.target.nativeElement, 80, this.activate);
+    utils.ifVisible(this, this.target.nativeElement, 30, this.activate);
   }
 
   initPassion() {
