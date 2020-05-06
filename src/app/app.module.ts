@@ -22,7 +22,7 @@ import { LicenseItemComponent } from "./header/license/license-item/license-item
 import { UserComponent } from "./header/user/user.component";
 import { CopyrightComponent } from "./header/copyright/copyright.component";
 import { ContactComponent } from "./header/contact/contact.component";
-import { IntroComponent } from "./header/intro/intro.component";
+import { IntroComponent } from "./body/intro/intro.component";
 import { BodyComponent } from "./body/body.component";
 import { FooterComponent } from "./footer/footer.component";
 import { GraphComponent } from "./component/graph/graph.component";
