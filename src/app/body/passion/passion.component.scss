@@ -20,5 +20,11 @@
         }
       }
     }
+    &__aboutme {
+      padding: 0 20px;
+      @media screen and (min-width: $xlarge) {
+        padding: 0 150px;
+      }
+    }
   }
 }

@@ -8,3 +8,4 @@ export * from "./formation.service";
 export * from "./experience.service";
 export * from "./github.service";
 export * from "./knowledge.service";
+export * from "./aboutme.service";
