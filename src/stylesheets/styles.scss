@@ -41,6 +41,30 @@ a {
   color: $white;
 }
 
+.segment {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    border-top: 2px solid $darkmode;
+    border-left: 2px solid $darkmode;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 40%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-right: 2px solid $darkmode;
+    border-bottom: 2px solid $darkmode;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    height: 40%;
+  }
+}
+
 .clickable {
   cursor: pointer;
   transition-duration: 200ms;
