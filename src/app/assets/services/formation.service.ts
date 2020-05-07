@@ -25,7 +25,7 @@ export class FormationService {
     new models.OneExperience(
       new models.Date("2016"),
       "Premiers Secours en Équipe 1 et 2 (PSE1 et PSE2)",
-      "Secourisme qualifié à l'aide des personnes en danger et premiers secours"
+      "Secouriste qualifié pour les premiers secours en équipe"
     ),
   ]);
 }
