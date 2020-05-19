@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
 
 import {
   CompetenceService,
@@ -52,7 +53,6 @@ const appRoutes: Routes = [
   { path: "", component: AppCoreComponent },
   { path: "cv", redirectTo: "" },
   { path: "mentions-legales", component: MentionsLegalesComponent },
-  // { path: "project/:path", component: ProjectViewComponent },
   { path: "404", component: NotFoundComponent },
   { path: "**", redirectTo: "/404" },
 ];
@@ -91,7 +91,12 @@ const appRoutes: Routes = [
     KnowledgeComponent,
     AboutMeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+  ],
   providers: [
     CompetenceService,
     ContactService,
