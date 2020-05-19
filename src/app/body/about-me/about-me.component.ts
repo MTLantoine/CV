@@ -14,7 +14,6 @@ export class AboutMeComponent implements OnInit {
   constructor(private aboutMeService: AboutMeService) {}
 
   ngOnInit() {
-    console.log("test");
     this.initAboutMe();
   }
 
