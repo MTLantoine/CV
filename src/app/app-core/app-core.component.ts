@@ -39,12 +39,8 @@ export class AppCoreComponent implements OnInit {
         this.visitor
       )
       .subscribe(
-        () => {
-          console.log("Enregistrement terminé !");
-        },
-        (error) => {
-          console.log("Erreur ! : " + error);
-        }
+        () => {},
+        (error) => {}
       );
   }
 }
