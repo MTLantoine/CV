@@ -23,68 +23,8 @@ export class AppCoreComponent implements OnInit {
   initVisitor() {
     var newDate = "";
     this.date = new Date();
-    switch (this.date.getDay()) {
-      case 0:
-        newDate += "Lundi ";
-        break;
-      case 1:
-        newDate += "Mardi ";
-        break;
-      case 2:
-        newDate += "Mercredi ";
-        break;
-      case 3:
-        newDate += "Jeudi ";
-        break;
-      case 4:
-        newDate += "Vendredi ";
-        break;
-      case 5:
-        newDate += "Samedi ";
-        break;
-      case 6:
-        newDate += "Dimanche ";
-        break;
-    }
-    newDate += this.date.getDate() + " ";
-    switch (this.date.getMonth()) {
-      case 0:
-        newDate += "Janvier ";
-        break;
-      case 1:
-        newDate += "Février ";
-        break;
-      case 2:
-        newDate += "Mars ";
-        break;
-      case 3:
-        newDate += "Avril ";
-        break;
-      case 4:
-        newDate += "Mai ";
-        break;
-      case 5:
-        newDate += "Juin ";
-        break;
-      case 6:
-        newDate += "Juillet ";
-        break;
-      case 7:
-        newDate += "Août ";
-        break;
-      case 8:
-        newDate += "Septembre ";
-        break;
-      case 9:
-        newDate += "Octobre ";
-        break;
-      case 10:
-        newDate += "Novembre ";
-        break;
-      case 11:
-        newDate += "Décembre ";
-        break;
-    }
+    newDate += this.date.getDate() + "/";
+    newDate += this.date.getMonth() + 1 + "/";
     newDate += this.date.getFullYear() + " - ";
     newDate += this.date.getHours() + ":";
     newDate += this.date.getMinutes();
