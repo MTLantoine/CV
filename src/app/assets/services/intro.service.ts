@@ -18,7 +18,7 @@ export class IntroService {
       "Motivé, rigoureux et surtout passionné, je cherche toujours à me dépasser."
     ),
     new models.OneText(
-      "J'aime quand le travail est soigneusement réalisé, et quand le travail réalisé est à la pointe de la technologie."
+      "J'aime quand le travail est soigneusement réalisé et quand celui-ci est à la pointe de la technologie."
     ),
     new models.OneText(
       "De plus, mes différentes expériences professionnelles m’ont permis d’acquérir le sens des responsabilités et l’esprit d’équipe."

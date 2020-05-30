@@ -32,7 +32,6 @@ export class AppCoreComponent implements OnInit {
   }
 
   saveToServer() {
-    console.log(this.visitor);
     this.httpClient
       .post(
         "https://cv-online-mortelier.firebaseio.com/Visitor.json",
