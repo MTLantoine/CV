@@ -18,7 +18,7 @@ export class ExperienceService {
       new models.Date("2020", "Juillet - Août"),
       "Nageur sauveteur qualifié - Chef de poste Adjoint",
       "Surveillance et sauvetage en zone de baignade et préventions sur la plage comme dans l'eau",
-      "FFSS (Fédération Française se Sauvetage et de Secourisme)"
+      "FFSS (Fédération Française de Sauvetage et de Secourisme)"
     ),
     new models.OneExperience(
       new models.Date("2018", "Juillet - Août"),
