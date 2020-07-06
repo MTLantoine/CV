@@ -9,6 +9,18 @@ export class ExperienceService {
       "Yoozly (Stage)"
     ),
     new models.OneExperience(
+      new models.Date("2020", "Mai"),
+      "Livreur",
+      "Livraison de courses à domicile",
+      "CORA"
+    ),
+    new models.OneExperience(
+      new models.Date("2020", "Juillet - Août"),
+      "Nageur sauveteur qualifié - Chef de poste Adjoint",
+      "Surveillance et sauvetage en zone de baignade et préventions sur la plage comme dans l'eau",
+      "FFSS (Fédération Française se Sauvetage et de Secourisme)"
+    ),
+    new models.OneExperience(
       new models.Date("2018", "Juillet - Août"),
       "Nageur sauveteur qualifié - Sapeur pompier volontaire",
       "Surveillance et sauvetage en zone de baignade et préventions sur la plage comme dans l'eau",
