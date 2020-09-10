@@ -23,12 +23,14 @@
       >
         Tel :
       </div>
-      <div
+      <a
+        href="tel:{{ contact.tel }}"
+        target="_blank"
         class="contact__content__info__text slideLeftEffect"
         [class.active]="conditionVariable"
       >
         {{ contact.tel }}
-      </div>
+      </a>
     </div>
 
     <div class="contact__content__info">
