@@ -20,11 +20,11 @@ export class MentionsLegalesComponent implements OnInit {
 
   initMentionsLegales() {
     this.frText =
-      "Ce site a été créé sur AngularJS par Antoine Mortelier, et appartient à Antoine Mortelier.";
+      "Ce site a été créé sur Angular par Antoine Mortelier, et appartient à Antoine Mortelier.";
     this.frDate = "Dernière date de mise à jour :";
     this.enText =
-      "This website was created on AngularJS by Antoine Mortelier, and belongs to Antoine Mortelier.";
+      "This website was created on Angular by Antoine Mortelier, and belongs to Antoine Mortelier.";
     this.enDate = "Last update :";
-    this.date = "25/04/2020 -- 21:13";
+    this.date = "05/10/2023 -- 18:00";
   }
 }

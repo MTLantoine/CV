@@ -36,12 +36,12 @@ export class PassionService {
     // Musique
     new models.OnePassion("Musique", [
       new models.OneExample(
-        "Piano",
-        new models.Picture("./assets/pic/svg/piano.svg", "Piano")
-      ),
-      new models.OneExample(
         "Guitare",
         new models.Picture("./assets/pic/svg/music.svg", "Guitare")
+      ),
+      new models.OneExample(
+        "Piano",
+        new models.Picture("./assets/pic/svg/piano.svg", "Piano")
       ),
     ]),
   ]);

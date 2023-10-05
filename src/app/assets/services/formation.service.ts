@@ -3,6 +3,11 @@ import * as models from "../models";
 export class FormationService {
   formation = new models.Experience("Formations & Compétences", [
     new models.OneExperience(
+      new models.Date("2020 - 2022"),
+      "Université Catholique de Lille",
+      "Master Informatique"
+    ),
+    new models.OneExperience(
       new models.Date("2016 - 2020"),
       "Université de Lille",
       "Licence Informatique"
@@ -14,7 +19,7 @@ export class FormationService {
     ),
     new models.OneExperience(
       new models.Date("2019"),
-      "AngularJS",
+      "Angular",
       "Framework JavaScript qui étend le HTML pour le rendre dynamique, et permet de développer ses propres balises et attributs HTML"
     ),
     new models.OneExperience(

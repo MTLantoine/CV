@@ -3,9 +3,15 @@ import * as models from "../models";
 export class ExperienceService {
   experience = new models.Experience("Expériences", [
     new models.OneExperience(
+      new models.Date("Octobre 2023", "Septembre 2020 -"),
+      "Développeur Front-End",
+      "Conception de sites Web sous Angular, VueJS et Magento 2",
+      "Insitaction"
+    ),
+    new models.OneExperience(
       new models.Date("2019", "Avril - Août"),
       "Développeur Front-End",
-      "Conception de sites Web sous AngularJS",
+      "Conception de sites Web sous Angular",
       "Yoozly (Stage)"
     ),
     new models.OneExperience(

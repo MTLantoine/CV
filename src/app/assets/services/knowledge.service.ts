@@ -5,8 +5,12 @@ export class KnowledgeService {
     // Framework
     new models.OnePassion("Framework", [
       new models.OneExample(
-        "AngularJS",
-        new models.Picture("./assets/pic/svg/angularjs.svg", "AngularJS")
+        "Angular",
+        new models.Picture("./assets/pic/svg/angularjs.svg", "Angular")
+      ),
+      new models.OneExample(
+        "VueJS",
+        new models.Picture("./assets/pic/svg/vuejs.svg", "VueJS")
       ),
     ]),
 
@@ -26,7 +30,15 @@ export class KnowledgeService {
     new models.OnePassion("Versioning", [
       new models.OneExample(
         "Git",
-        new models.Picture("./assets/pic/svg/git.svg", "GitHub")
+        new models.Picture("./assets/pic/svg/git.svg", "Git")
+      ),
+      new models.OneExample(
+        "GitHub",
+        new models.Picture("./assets/pic/svg/github-black.svg", "GitHub")
+      ),
+      new models.OneExample(
+        "GitLab",
+        new models.Picture("./assets/pic/svg/gitlab.svg", "GitLab")
       ),
     ]),
   ]);
