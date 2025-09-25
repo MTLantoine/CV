@@ -20,8 +20,12 @@ export class PassionService {
     // Sport
     new models.OnePassion("Sport", [
       new models.OneExample(
-        "Natation en club",
-        new models.Picture("./assets/pic/svg/swim.svg", "Natation en club")
+        "Natation",
+        new models.Picture("./assets/pic/svg/swim.svg", "Natation")
+      ),
+      new models.OneExample(
+        "Escalade",
+        new models.Picture("./assets/pic/svg/climb.svg", "Escalade")
       ),
       new models.OneExample(
         "Musculation",

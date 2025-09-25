@@ -1,7 +1,7 @@
 import * as models from "../models";
 
 export class KnowledgeService {
-  connaissance = new models.Passion("Connaissances", [
+  connaissance = new models.Passion("Compétences", [
     // Framework
     new models.OnePassion("Framework", [
       new models.OneExample(
@@ -12,17 +12,29 @@ export class KnowledgeService {
         "VueJS",
         new models.Picture("./assets/pic/svg/vuejs.svg", "VueJS")
       ),
+      new models.OneExample(
+        "NextJS",
+        new models.Picture("./assets/pic/svg/next-js.svg", "NextJS")
+      ),
     ]),
 
     // IDE
-    new models.OnePassion("IDE", [
+    new models.OnePassion("Technos", [
       new models.OneExample(
-        "Visual Studo Code",
-        new models.Picture("./assets/pic/svg/vs.svg", "Visual Studo Code")
+        "React",
+        new models.Picture("./assets/pic/svg/react.png", "React")
       ),
       new models.OneExample(
-        "Eclipse",
-        new models.Picture("./assets/pic/svg/eclipse.svg", "Eclipse")
+        "JavaScript",
+        new models.Picture("./assets/pic/svg/javascript.svg", "JavaScript")
+      ),
+      new models.OneExample(
+        "TypeScript",
+        new models.Picture("./assets/pic/svg/typescript.svg", "TypeScript")
+      ),
+      new models.OneExample(
+        "HTML",
+        new models.Picture("./assets/pic/svg/html.png", "HTML")
       ),
     ]),
 
@@ -39,6 +51,29 @@ export class KnowledgeService {
       new models.OneExample(
         "GitLab",
         new models.Picture("./assets/pic/svg/gitlab.svg", "GitLab")
+      ),
+      new models.OneExample(
+        "Azure DevOps",
+        new models.Picture("./assets/pic/svg/azure-devops.svg", "Azure DevOps")
+      ),
+    ]),
+
+    // Skills
+    new models.OnePassion("Soft skills", [
+      new models.OneExample(
+        "Autonomie"
+      ),
+      new models.OneExample(
+        "Résilience"
+      ),
+      new models.OneExample(
+        "Curiosité"
+      ),
+      new models.OneExample(
+        "Rigueur"
+      ),
+      new models.OneExample(
+        "Adaptabilité"
       ),
     ]),
   ]);

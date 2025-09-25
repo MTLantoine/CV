@@ -3,6 +3,12 @@ import * as models from "../models";
 export class ExperienceService {
   experience = new models.Experience("Expériences", [
     new models.OneExperience(
+      new models.Date("Aujourd'hui", "Octobre 2023 -"),
+      "Développeur Front-End",
+      "Conception et développement de nouvelles fonctionnalités pour les agents et courtiers, sous Angular et React",
+      "Daveo"
+    ),
+    new models.OneExperience(
       new models.Date("Octobre 2023", "Septembre 2020 -"),
       "Développeur Front-End",
       "Conception de sites Web sous Angular, VueJS et Magento 2",

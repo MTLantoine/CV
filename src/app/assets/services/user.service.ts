@@ -4,8 +4,8 @@ export class UserService {
   user = new models.User(
     "Antoine",
     "Mortelier",
-    25,
-    new models.Picture("./assets/pic/profile.png", "profile picture"),
+    new Date(1997, 11, 26),
+    new models.Picture("./assets/pic/profile.jpeg", "profile picture"),
     new models.Picture("./assets/pic/sunglasses.png", "easter egg")
   );
 }

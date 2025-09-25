@@ -1,7 +1,7 @@
 <section class="box-item slideDownEffect" [class.active]="condition">
   <div class="box-item__content">
     <div class="box-item__content__title">{{ item.title }}</div>
-    <div class="box-item__content__picto">
+    <div *ngIf="item.picto" class="box-item__content__picto">
       <img src="{{ item.picto.src }}" alt="{{ item.picto.alt }}" />
     </div>
   </div>
