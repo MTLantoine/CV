@@ -1,7 +1,7 @@
 import * as models from "../models";
 
 export class FormationService {
-  formation = new models.Experience("Formations & Compétences", [
+  formation = new models.Experience("Formations", [
     new models.OneExperience(
       new models.Date("2020 - 2022"),
       "Université Catholique de Lille",
@@ -16,16 +16,6 @@ export class FormationService {
       new models.Date("2017"),
       "Brevet National de Sécurité et de Sauvetage Aquatique (BNSSA)",
       "Sauveteur qualifié aux interventions sur une personne en difficulté dans l'eau"
-    ),
-    new models.OneExperience(
-      new models.Date("2019"),
-      "Angular",
-      "Framework JavaScript qui étend le HTML pour le rendre dynamique, et permet de développer ses propres balises et attributs HTML"
-    ),
-    new models.OneExperience(
-      new models.Date("2017"),
-      "Git",
-      "Logiciel de gestion de versions décentralisé"
     ),
     new models.OneExperience(
       new models.Date("2016"),

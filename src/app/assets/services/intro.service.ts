@@ -3,25 +3,25 @@ import * as models from "../models";
 export class IntroService {
   intro = new models.Text("Introduction", [
     new models.OneText(
-      "Passionné d'informatique et diplômé d'un Master Informatique, j’aime particulièrement créer de nouveaux programmes et surmonter des difficultés."
+      "Passionné d'informatique et titulaire d’un Master en Informatique, je prends un plaisir particulier à concevoir de nouveaux programmes et à relever des défis techniques"
     ),
     new models.OneText(
-      "Fort d’une expérience dans une entreprise spécialisée dans le développement de site internet, j’ai pu réaliser des projets utilisant différentes technologies."
+      "Fort d’une expérience au sein d’entreprises spécialisées dans le développement de sites internet et d’applications destinées aux secteurs de la banque et de l’assurance, j’ai pu mener à bien des projets utilisant une variété de technologies."
     ),
     new models.OneText(
-      "Motivé, rigoureux et surtout passionné, je cherche toujours à me dépasser."
+      "Motivé, rigoureux et passionné, je cherche constamment à me dépasser pour atteindre l’excellence."
     ),
     new models.OneText(
-      "J'aime quand le travail est soigneusement réalisé et quand celui-ci est à la pointe de la technologie."
+      "J’accorde une grande importance à la qualité du travail, qu’il soit réalisé avec soin et en intégrant les dernières innovations technologiques."
     ),
     new models.OneText(
-      "De plus, mes différentes expériences professionnelles m’ont permis d’acquérir le sens des responsabilités et l’esprit d’équipe."
+      "Par ailleurs, mes diverses expériences professionnelles m’ont permis d’acquérir un sens aigu des responsabilités et un solide esprit d’équipe."
     ),
     new models.OneText(
-      "Exercer dans un secteur qui me permet d'exprimer ma motivation et de donner satisfaction dans le travail que je vais avoir la chance d'effectuer est primordial pour moi."
+      "Évoluer dans un secteur qui me permet d’exprimer pleinement ma motivation et de contribuer à des projets satisfaisants est pour moi une priorité."
     ),
     new models.OneText(
-      "Grâce à ma polyvalence et à mes connaissances, je pense pouvoir être un élément complémentaire important au sein de votre équipe."
+      "Grâce à ma polyvalence et à mes connaissances techniques, je suis convaincu de pouvoir être un atout précieux pour votre équipe."
     ),
   ]);
 }

@@ -16,7 +16,7 @@ export class HistoricalComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    utils.ifVisible(this, this.target.nativeElement, 80, this.activate);
+    utils.ifVisible(this, this.target.nativeElement, 50, this.activate);
     this.sortDates();
   }
 
